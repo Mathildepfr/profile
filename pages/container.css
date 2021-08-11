@@ -1,0 +1,6 @@
+.row {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px;
+  padding: 15px;
+}

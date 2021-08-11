@@ -1,0 +1,30 @@
+#social-links {
+  text-align: center;
+
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation li {
+  list-style-type: none;
+}
+
+.navigation i {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+li i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 150%;
+}
+
+i:hover {
+  color: #1C1E27;
+}

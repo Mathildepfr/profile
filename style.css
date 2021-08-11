@@ -1,5 +1,12 @@
+@import url(components/pictures.css);
+@import url(components/cards.css);
+@import url(components/buttons.css);
+
+@import url(pages/navigation.css);
+@import url(pages/container.css);
+
 body {
-  background-color: rgb(245, 243, 246);
+  background-color: white;
 }
 
 h1 {
@@ -7,7 +14,7 @@ h1 {
   font-weight: 300;
   text-align: center;
   font-size: 140%;
-  color: rgba(28, 0, 14, 0.7);
+  color: black;
   margin-bottom: 5%;
   margin-top: 5%;
 }
@@ -16,58 +23,8 @@ h2 {
   font-family: Poppins;
   font-weight: 300;
   text-align: center;
-  font-size: 85%;
-  margin-top: 5%;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 5%;
-}
-
-.item {
-  width: 45%;
-  margin: 0 auto;
-  filter: grayscale(100%);
-  display: flex;
-}
-
-.item:hover {
-  filter: none;
-  transform: scale(1, 1) rotate(-3deg) !important;
-  transition: all 0.35s;
-  box-shadow: 2px 2px rgba(22, 0, 0, 0.5);
-}
-
-.polaroid {
-  background: #fff;
-  padding: 1rem;
-  padding-bottom: 3rem;
-}
-
-.polaroid > img{
-  max-width: 100%;
-  height: auto;
-}
-
-#btn-lewagon{
-  font-family: Poppins;
-  font-size: 70%;
-  background-color: rgba(22, 0, 0);
+  font-size: 120%;
   color: white;
-  text-align: center;
-  width: 8%;
-  display: block;
-  margin: 0 auto;
-  border-radius: 2px;
-  padding: 5px 15px;
-  text-decoration: none;
-  margin-bottom: 5%;
-}
-
-#btn-lewagon:hover {
-  background-color: hsl(0, 32%, 17%);
-  transform: scale(1, 1.2) !important;
-  transition: all 0.35s;
-  box-shadow: 2px 2px rgba(22, 0, 0);
 }
 
 h3 {
@@ -79,94 +36,29 @@ h3 {
   margin-top: 1%;
 }
 
-#social-links {
-  text-align: center;
-  margin-bottom: 1%;
-}
-
-#navigation {
-  width: 100px;
-  display: inline-flex;
-  justify-content: space-evenly;
-}
-
-#navigation li {
-  list-style-type: none;
-}
-
-li i {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 150%;
-}
-
-i:hover {
-  color: rgba(22, 0, 0, 80%);
-}
-
-.container {
-  width: 60%;
-  margin: 10% auto;
-}
-
-.card-white {
-  background-color: rgb(245, 243, 246);
-  padding: 1%;
-  margin: 10%;
-  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
-  border-radius: 4px;
-}
-
-.card-brown {
-  background-color: hsl(0, 32%, 17%);
-  padding: 1%;
-  margin: 10%;
-  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
-  border-radius: 4px;
-}
-
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
-
-h4 {
-  color: rgba(22, 0, 0);
+p {
+  color: black;
   font-family: Poppins;
   font-weight: 300;
   text-align: center;
   font-size: 85%;
-  margin-top: 1%;
+  margin-top: 5%;
 }
 
-.three-pictures {
-  display: inline-flex;
-  justify-content: space-between;
-}
 
-.pictures {
-  width: 30%;
-  margin: 0 auto;
-  filter: grayscale(100%);
-  display: flex;
-}
 
-.pictures:hover {
-  filter: none;
-  transform: scale(1, 1) rotate(-3deg) !important;
-  transition: all 0.35s;
-  box-shadow: 2px 2px rgba(22, 0, 0, 0.5);
+@media (max-width: 2000px) {
+  .col-6 {
+    width: 50%;
+  }
+}
+@media (max-width: 720px) {
+  .col-6 {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .col-6 {
+    width: 300px;
+  }
 }

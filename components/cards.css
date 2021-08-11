@@ -1,0 +1,52 @@
+
+.card-white {
+  background-color: #F7F7F7;
+  padding: 10px;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+}
+
+.card-brown {
+  background-color: #3333FF;
+  padding: 5%;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+  height: 100%;
+}
+
+.card-black {
+  background-color: #1C1E27;
+  padding: 30px;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+  padding-bottom: 60px;
+}
+
+.card-black h2 {
+  color: #FFC605;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cards-behance {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card-behance {
+  background-size: cover;
+  background-position: center;
+  width: 24.48%;
+  height: 120px;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  display: inline-block;
+  justify-content: center;
+}
+
+.shadow {
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+}
+
+.col-6 {
+  margin: 1%;
+}
