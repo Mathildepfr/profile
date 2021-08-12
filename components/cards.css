@@ -28,19 +28,14 @@
   margin-bottom: 20px;
 }
 
-.cards-behance {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
 
 .card-behance {
   background-size: cover;
   background-position: center;
-  width: 24.48%;
   height: 120px;
   border-radius: 1px;
   box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-  display: inline-block;
-  justify-content: center;
+  margin: 1%;
 }
 
 .shadow {
@@ -49,4 +44,16 @@
 
 .col-6 {
   margin: 1%;
+}
+
+.cards-behance {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 960px) {
+  .cards-behance {
+    grid-template-columns: 1fr 1fr;
+  }
 }
