@@ -1,4 +1,4 @@
-#btn-lewagon{
+#clickme {
   font-family: Poppins;
   font-size: 70%;
   background-color: #3333FF;
@@ -13,7 +13,7 @@
   margin-bottom: 5%;
 }
 
-#btn-lewagon:hover {
+#clickme:hover {
   background-color: #3333FF;
   transform: scale(1.2, 1.2) !important;
   transition: all 0.1s;
