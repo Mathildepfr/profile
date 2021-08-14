@@ -1,7 +1,7 @@
 
 .card-white {
   background-color: #F7F7F7;
-  padding: 10px;
+  padding: 5%;
   box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
   border-radius: 4px;
 }
@@ -11,7 +11,6 @@
   padding: 5%;
   box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
   border-radius: 4px;
-  height: 100%;
 }
 
 .card-black {
@@ -44,6 +43,7 @@
 
 .col-6 {
   margin: 1%;
+  height: 500%;
 }
 
 .cards-behance {
@@ -56,4 +56,31 @@
   .cards-behance {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.cards-illu {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 960px) {
+  .cards-illu {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-illu {
+  border-radius: 5%;
+  box-shadow: 0 0 5px rgb(230 230 230);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(230,230,230);
+  margin: 4%;
+  background-color: white;
+}
+
+.card-illu img {
+  height: 100px;
+  max-width: 110px;
 }

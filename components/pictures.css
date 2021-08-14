@@ -1,5 +1,5 @@
 .item {
-  width: 45%;
+  width: 25%;
   margin: 0 auto;
   filter: grayscale(100%);
   display: flex;
@@ -29,7 +29,7 @@
 }
 
 .pictures {
-  width: 30%;
+  width: 25%;
   margin: 0 auto;
   filter: grayscale(100%);
   display: flex;
