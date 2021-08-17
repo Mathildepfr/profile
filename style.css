@@ -2,6 +2,7 @@
 @import url(components/cards.css);
 @import url(components/buttons.css);
 @import url(components/clock.css);
+@import url(components/gradient.css);
 
 @import url(pages/navigation.css);
 @import url(pages/container.css);

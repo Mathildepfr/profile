@@ -6,6 +6,8 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,200;1,700&family=Poppins:ital,wght@0,100;0,300;0,800;1,100;1,300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +16,17 @@
 </head>
 <body>
   <div class="container">
-    <div class="clock">
-      <div class="clock-face">
-        <div class="hand hour-hand"></div>
-        <div class="hand min-hand"></div>
-        <div class="hand second-hand"></div>
+    <div class="row clocks">
+      <div class="clock lighter">
+        <div class="clock-face">
+          <div class="hand hour-hand"></div>
+          <div class="hand min-hand"></div>
+          <div class="hand second-hand"></div>
+        </div>
       </div>
+      <div class="gradient mid-light"></div>
+      <div class="gradient mid-dark"></div>
+      <div class="gradient darker"></div>
     </div>
   </div>
   <div class="container py-3">
@@ -138,7 +145,24 @@
           </div>
         </div>
       </div>
-  </div>
-  <script src="animations.js"></script>
-</body>
-</html>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 offset-md-3">
+          <form class='form-inline my-5'>
+            <input type="text" class="form-control flex-grow-1 mr-2" placeholder="Type an address">
+            <input type="submit" value="Geocode!" class="btn btn-primary">
+          </form>
+          <p class='text-monospace lead text-center font-weight-bold'>
+          <ul id="coordinates">
+          </ul>
+          </p>
+          <div style="height: 300px">
+            <div id="map" style="height: 300px; width: 600px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+  </html>

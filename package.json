@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mapbox-gl": "^2.4.1",
+    "moment": "^2.29.1",
+    "momentjs": "^2.0.0",
+    "stimulus-carousel": "^2.0.0"
+  }
+}
