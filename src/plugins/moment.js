@@ -1,2 +1,7 @@
-var moment = require('moment'); // require
-moment().format();
+// import moment from 'moment';
+
+// const timeZone = () => {
+//   moment().format();
+// };
+
+// export { timeZone };

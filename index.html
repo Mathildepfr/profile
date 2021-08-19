@@ -16,7 +16,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="row clocks">
+    <div class="clocks">
       <div class="clock lighter">
         <div class="clock-face">
           <div class="hand hour-hand"></div>
@@ -24,23 +24,17 @@
           <div class="hand second-hand"></div>
         </div>
       </div>
-      <div class="gradient mid-light"></div>
-      <div class="gradient mid-dark"></div>
-      <div class="gradient darker"></div>
+
     </div>
   </div>
   <div class="container py-3">
     <div class="row">
-      <div class="col-6">
+      <div class="cards">
         <div class="card-white">
-          <h1>Hi, my name is <strong>Mathilde</strong></h1>
-          <!-- <div id="profile-picture">
-            <div class="item">
-              <div class="polaroid"><img src="images/MathildePeiffer.jpeg" alt="Mathilde Peiffer">
-              </div>
-            </div>
-          </div> -->
-          <img src="images/ProfilePicture.jpg" class="avatar-picture">
+          <div class="card-white-name">
+            <img src="images/ProfilePicture.jpg" class="avatar-picture">
+            <h1>Hi, my name is <strong>Mathilde</strong></h1>
+          </div>
           <p>I love front-end web development & industrial design. <br>I'm from Belgium. <br>
             I'm a huge fan of art, nature, animation movies & food. <br> I was a student at Le Wagon, Melbourne and I also have a master in industrial design.
           </p>
@@ -61,8 +55,8 @@
           </div>
         </div>
       </div>
-      <div class="col-6">
-        <div class="card-brown">
+      <div class="cards">
+        <div class="card-blue">
 
           <div class="skills">
             <h2>Skills</h2>
@@ -101,26 +95,54 @@
             </div>
           </div>
 
+          <div class="languages">
+            <h2>Languages</h2>
+            <div class="navigation">
+              <div class="btn btn-languages">
+                French
+              </div>
+              <div class="btn btn-languages">
+                English
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <div class="container-illu">
           <h2 class="text-center">What I love</h2>
           <div class="cards-illu">
             <div class="card-illu">
+              <h4>Web Development</h4>
               <img src="images/Webdev.svg">
-              <p>Web Development</p>
             </div>
             <div class="card-illu">
+              <h4>Creation</h4>
               <img src="images/Creation.svg">
-              <p>Creation</p>
             </div>
             <div class="card-illu">
+              <h4>Travel</h4>
               <img src="images/Travelling.svg">
-              <p>Travel</p>
             </div>
             <div class="card-illu">
+              <h4>Code</h4>
               <img src="images/Code.svg">
-              <p>Code</p>
+            </div>
+            <div class="card-illu">
+              <h4>Art</h4>
+              <img src="images/Art.svg">
+            </div>
+            <div class="card-illu">
+              <h4>Food</h4>
+              <img src="images/Food.svg">
+            </div>
+            <div class="card-illu">
+              <h4>Outdoor Adventures</h4>
+              <img src="images/OutdoorAdventures.svg">
+            </div>
+            <div class="card-illu">
+              <h4>Design</h4>
+              <img src="images/Design.svg">
             </div>
           </div>
         </div>
@@ -146,23 +168,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-6 offset-md-3">
-          <form class='form-inline my-5'>
-            <input type="text" class="form-control flex-grow-1 mr-2" placeholder="Type an address">
-            <input type="submit" value="Geocode!" class="btn btn-primary">
-          </form>
-          <p class='text-monospace lead text-center font-weight-bold'>
-          <ul id="coordinates">
-          </ul>
-          </p>
-          <div style="height: 300px">
-            <div id="map" style="height: 300px; width: 600px"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="index.js"></script>
-  </body>
-  </html>
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+</html>

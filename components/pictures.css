@@ -24,13 +24,25 @@
 }
 
 .three-pictures {
-  display: inline-flex;
-  justify-content: space-between;
+  display: grid;
+  flex-grow: 1;
+}
+
+@media (max-width: 699px) {
+  .three-pictures {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 700px) {
+  .three-pictures {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .pictures {
-  width: 25%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 2%;
   filter: grayscale(100%);
   display: flex;
 }
@@ -47,10 +59,7 @@
 }
 
 .avatar-picture {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 10%;
+  width: 20%;
   border-radius: 50%;
   box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
   border: white 1px solid;

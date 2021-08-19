@@ -22,4 +22,4 @@ const getTime = () => {
   setInterval(setDate, 1000);
 };
 
-export { getTime }
+export { getTime };
