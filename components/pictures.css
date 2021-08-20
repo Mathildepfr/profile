@@ -64,3 +64,7 @@
   box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
   border: white 1px solid;
 }
+
+.dropdown img {
+  width: 10%;
+}

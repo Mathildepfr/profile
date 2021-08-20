@@ -3,6 +3,7 @@
 @import url(components/buttons.css);
 @import url(components/clock.css);
 @import url(components/gradient.css);
+@import url(components/dropdown.css);
 
 @import url(pages/navigation.css);
 @import url(pages/container.css);
@@ -22,7 +23,7 @@ h1 {
   margin-top: 2%;
 }
 
-h2 {
+h2, a {
   font-family: Poppins;
   font-weight: 300;
   text-align: center;
@@ -61,8 +62,6 @@ p {
   margin-top: 4%;
   margin-bottom: 4%;
 }
-
-
 
 @media (max-width: 2000px) {
   .col-6 {

@@ -1,0 +1,120 @@
+nav {
+  position: relative;
+}
+
+.cool {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 400px) {
+  .cool {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cool > li > a {
+  color: white;
+  text-decoration: none;
+  background: #3333FF;
+  padding: 2% 5%;
+  display: inline-block;
+  margin:4%;
+  border-radius: 4px;
+  width: 7.5rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cool > li {
+  position: relative;
+  display:flex;
+  justify-content: center;
+}
+
+.dropdown {
+  width: 60%;
+  opacity: 0;
+  position: absolute;
+  overflow: hidden;
+  padding:5%;
+  top:-5%;
+  border-radius:2px;
+  transition: all 0.5s;
+  transform: translateY(100px);
+  will-change: transform;
+  display: none;
+  z-index: 950;
+}
+
+.dropdown1 {
+  width: 80%;
+}
+
+.trigger-enter .dropdown {
+  display: block;
+}
+
+.trigger-enter-active .dropdown {
+  opacity: 1;
+}
+
+.dropdownBackground {
+  position: absolute;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+  transition:all 0.3s, opacity 0.1s, translate 0.2s;
+  /* transform-origin: 50% 0%; */
+  display: flex;
+  justify-content: center;
+  opacity:0;
+  z-index: 950;
+}
+
+.dropdownBackground.open {
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  width:20px;
+  height:20px;
+  display: block;
+  background:white;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.bio {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.courses {
+  min-width:80%;
+}
+
+.courses li {
+  padding: 2% 0;
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: white;
+}
+
+.education {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
