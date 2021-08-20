@@ -40,3 +40,7 @@
   text-align: center;
   color: #1C1E27;
 }
+
+.circles {
+    position: relative;
+}
