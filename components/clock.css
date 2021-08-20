@@ -31,6 +31,15 @@
   z-index: 900;
 }
 
+.hour-hand {
+  height: 7px;
+  background: black;
+}
+
+.second-hand {
+  opacity: 0.2;
+}
+
 .clocks {
   display: flex;
   justify-content: center;

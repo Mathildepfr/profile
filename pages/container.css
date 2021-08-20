@@ -16,6 +16,7 @@
   }
 }
 
+
 .container {
   display: flex;
 }
@@ -31,7 +32,6 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-
 .container-illu {
   margin-top: 1%;
 }
@@ -39,8 +39,4 @@
 .container-illu h2 {
   text-align: center;
   color: #1C1E27;
-}
-
-.circles {
-    position: relative;
 }
