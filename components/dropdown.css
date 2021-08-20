@@ -1,5 +1,6 @@
 nav {
   position: relative;
+  background: #3333FF;
 }
 
 .cool {
@@ -16,7 +17,7 @@ nav {
 .cool > li > a {
   color: white;
   text-decoration: none;
-  background: #3333FF;
+  background: #babeec1f;
   padding: 2% 5%;
   display: inline-block;
   margin:4%;
