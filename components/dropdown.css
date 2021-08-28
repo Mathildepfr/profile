@@ -100,6 +100,11 @@ nav ul {
   align-items: center;
 }
 
+.bio p a {
+  color: #3333FF;
+  font-size: 100%;
+}
+
 .courses {
   min-width:80%;
 }
