@@ -68,3 +68,29 @@
 .dropdown img {
   width: 10%;
 }
+
+.projects {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  padding-left: calc(3% - 10px);
+}
+
+.projects-container {
+  padding: 10px;
+  flex-shrink: 0;
+  width: 25%;
+}
+
+.project {
+  width: 100%;
+  box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+  border-radius: 8px;
+}
+
+.projects-container img {
+  aspect-ratio: 16 / 12;
+  background-size: cover;
+  border-radius: 8px 8px 0% 0%;
+  width: 100%;
+}
