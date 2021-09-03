@@ -82,12 +82,13 @@
   text-align: center;
   padding: 10%;
   background-color: white;
-  height: 60%;
   border-radius: 4px;
   box-shadow: 0 0 10px rgb(0 0 0 / 20%);
   margin: 2%;
 }
 
 .card-illu img {
-  max-width: 60%;
+  max-width: 32%;
+  aspect-ratio: 16 / 12;
+  background-size: cover;
 }

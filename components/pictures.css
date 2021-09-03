@@ -82,6 +82,18 @@
   width: 25%;
 }
 
+@media (max-width: 699px) {
+  .projects-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 700px) {
+  .projects-container {
+    width: 40%;
+  }
+}
+
 .project {
   width: 100%;
   box-shadow: 0 0 15px rgb(0 0 0 / 20%);
@@ -93,4 +105,17 @@
   background-size: cover;
   border-radius: 8px 8px 0% 0%;
   width: 100%;
+}
+
+.text-projects a {
+  color: white;
+  text-decoration: none;
+  background-color: #1C1E27;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 3px;
+}
+
+.text-projects a:hover {
+  background-color: #31418a;
 }
